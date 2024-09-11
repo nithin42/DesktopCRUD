@@ -1,0 +1,10 @@
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\bin\Debug\DesktopCRUD.exe.config
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\bin\Debug\DesktopCRUD.exe
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\bin\Debug\DesktopCRUD.pdb
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\obj\Debug\DesktopCRUD.csproj.AssemblyReference.cache
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\obj\Debug\DesktopCRUD.Form1.resources
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\obj\Debug\DesktopCRUD.Properties.Resources.resources
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\obj\Debug\DesktopCRUD.csproj.GenerateResource.cache
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\obj\Debug\DesktopCRUD.csproj.CoreCompileInputs.cache
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\obj\Debug\DesktopCRUD.exe
+C:\Users\nithi\source\repos\DesktopCRUD\DesktopCRUD\obj\Debug\DesktopCRUD.pdb

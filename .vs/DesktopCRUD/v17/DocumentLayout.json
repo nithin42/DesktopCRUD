@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28F2C925-4AF8-44F0-9568-F2A65F90784A}|DesktopCRUD\\DesktopCRUD.csproj|c:\\users\\nithi\\source\\repos\\desktopcrud\\desktopcrud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F2C925-4AF8-44F0-9568-F2A65F90784A}|DesktopCRUD\\DesktopCRUD.csproj|solutionrelative:desktopcrud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F2C925-4AF8-44F0-9568-F2A65F90784A}|DesktopCRUD\\DesktopCRUD.csproj|C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\desktopcrud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{28F2C925-4AF8-44F0-9568-F2A65F90784A}|DesktopCRUD\\DesktopCRUD.csproj|solutionrelative:desktopcrud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F2C925-4AF8-44F0-9568-F2A65F90784A}|DesktopCRUD\\DesktopCRUD.csproj|C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\DesktopCRUD\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F2C925-4AF8-44F0-9568-F2A65F90784A}|DesktopCRUD\\DesktopCRUD.csproj|solutionrelative:DesktopCRUD\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\DesktopCRUD\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "DesktopCRUD\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\DesktopCRUD\\Form1.Designer.cs",
+              "RelativeToolTip": "DesktopCRUD\\Form1.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T00:30:03.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\DesktopCRUD\\Form1.cs",
+              "RelativeDocumentMoniker": "DesktopCRUD\\Form1.cs",
+              "ToolTip": "C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\DesktopCRUD\\Form1.cs",
+              "RelativeToolTip": "DesktopCRUD\\Form1.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAtwEUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T00:29:45.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\DesktopCRUD\\Form1.cs",
+              "RelativeDocumentMoniker": "DesktopCRUD\\Form1.cs",
+              "ToolTip": "C:\\Users\\nithi\\source\\repos\\DesktopCRUD\\DesktopCRUD\\Form1.cs [Design]",
+              "RelativeToolTip": "DesktopCRUD\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T00:25:21.341Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
