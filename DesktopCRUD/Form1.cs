@@ -54,7 +54,7 @@ namespace DesktopCRUD
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
-            ClearText();
+            //ClearText();
         }
        
         public void ClearText()
