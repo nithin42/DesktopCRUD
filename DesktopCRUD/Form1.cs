@@ -65,6 +65,7 @@ namespace DesktopCRUD
             txtAddress.Clear();
             txtSalary.Clear();
             txtTeacherId.Clear();
+            //clearname
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
