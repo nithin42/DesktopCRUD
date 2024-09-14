@@ -42,7 +42,10 @@
             this.BtnShowAll = new System.Windows.Forms.Button();
             this.BtnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BtnDisplay = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -147,6 +150,7 @@
             this.BtnShowAll.TabIndex = 11;
             this.BtnShowAll.Text = "ShowAll";
             this.BtnShowAll.UseVisualStyleBackColor = true;
+            this.BtnShowAll.Click += new System.EventHandler(this.BtnShowAll_Click);
             // 
             // BtnExit
             // 
@@ -160,6 +164,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.BtnDisplay);
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.txtSalary);
             this.panel1.Controls.Add(this.BtnExit);
             this.panel1.Controls.Add(this.label1);
@@ -175,8 +181,29 @@
             this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Location = new System.Drawing.Point(61, 46);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(585, 603);
+            this.panel1.Size = new System.Drawing.Size(1243, 603);
             this.panel1.TabIndex = 13;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(497, 79);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(551, 257);
+            this.dataGridView1.TabIndex = 13;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // BtnDisplay
+            // 
+            this.BtnDisplay.Location = new System.Drawing.Point(719, 359);
+            this.BtnDisplay.Name = "BtnDisplay";
+            this.BtnDisplay.Size = new System.Drawing.Size(75, 23);
+            this.BtnDisplay.TabIndex = 14;
+            this.BtnDisplay.Text = "Display";
+            this.BtnDisplay.UseVisualStyleBackColor = true;
+            this.BtnDisplay.Click += new System.EventHandler(this.BtnDisplay_Click);
             // 
             // Form1
             // 
@@ -189,6 +216,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,6 +237,8 @@
         private System.Windows.Forms.Button BtnShowAll;
         private System.Windows.Forms.Button BtnExit;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button BtnDisplay;
     }
 }
 

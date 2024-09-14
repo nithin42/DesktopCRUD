@@ -33,7 +33,12 @@ namespace DesktopCRUD
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            string query = $"delete teacher where id='{txtTeacherId.Text.ToString()}'";
+            cmd.CommandText = query;
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            ClearText();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -84,6 +89,87 @@ namespace DesktopCRUD
             catch(Exception ex)
             {
                 throw ex;
+            }
+        }
+
+        private void BtnShowAll_Click(object sender, EventArgs e)
+        {
+            string query = $"select * from teacher where id='{txtTeacherId.Text.ToString()}'";
+            cmd.CommandText = query;
+            try
+            {
+                // Open the connection
+                conn.Open();
+
+                // Execute the query and retrieve the data
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                // If the data is available, read it and display in the fields
+                if (reader.Read())
+                {
+                    txtName.Text = reader["Name"].ToString();
+                    txtAddress.Text = reader["Address"].ToString();
+                    txtSalary.Text = reader["Salary"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("No data found for the given TeacherId.");
+                }
+
+                // Close the reader
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+            finally
+            {
+                // Ensure the connection is closed
+                conn.Close();
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+        }
+
+        private void BtnDisplay_Click(object sender, EventArgs e)
+        {
+              // The query to select all data from the teacher table
+            string query = "SELECT * FROM teacher";
+
+            // Set the command query
+            cmd.CommandText = query;
+
+            try
+            {
+                // Open the connection
+                conn.Open();
+
+                // Create a data adapter to execute the query and fill the data into a DataTable
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                // Create a DataTable to hold the query result
+                DataTable dataTable = new DataTable();
+
+                // Fill the DataTable with the query result
+                adapter.Fill(dataTable);
+
+                // Bind the DataTable to the DataGridView to display the data
+                dataGridView1.DataSource = dataTable;
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+            finally
+            {
+                // Ensure the connection is closed
+                conn.Close();
             }
         }
     }
