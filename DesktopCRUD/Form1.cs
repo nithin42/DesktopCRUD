@@ -10,10 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
+
 namespace DesktopCRUD
 {
     public partial class Form1 : Form
     {
+        int id;
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +30,7 @@ namespace DesktopCRUD
             conn = new SqlConnection("Data Source=DESKTOP-R9LR31F;DATABASE=SAMPLEDATA;Integrated Security=True;");
             cmd = new SqlCommand();
             cmd.Connection = conn;
+            
         }
 
 
@@ -131,10 +134,6 @@ namespace DesktopCRUD
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-          
-        }
 
         private void BtnDisplay_Click(object sender, EventArgs e)
         {
@@ -172,5 +171,44 @@ namespace DesktopCRUD
                 conn.Close();
             }
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value.ToString());
+            string query = "SELECT * FROM teacher where id ="+id+"";
+
+            cmd.CommandText = query;  
+
+            try
+            {
+                conn.Open();
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                DataTable dataTable = new DataTable();
+
+                adapter.Fill(dataTable);
+
+                dataGridView1.DataSource = dataTable;
+
+
+                if (dataTable.Rows.Count > 0)
+                {
+                    DataRow row = dataTable.Rows[0];  // Assume you want to display the first row
+                    HelperClass.SetTextBoxValuesFromRow(txtTeacherId, txtName, txtAddress, txtSalary, row);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+
     }
 }
