@@ -65,6 +65,7 @@ namespace DesktopCRUD
             ClearText();
             // Testing for Github
             // Testing for github on 09/12/2024..
+            //testing again github 2/20/2025
         }
        
         public void ClearText()
@@ -174,6 +175,11 @@ namespace DesktopCRUD
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
             id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value.ToString());
             string query = "SELECT * FROM teacher where id ="+id+"";
 
@@ -189,13 +195,14 @@ namespace DesktopCRUD
 
                 adapter.Fill(dataTable);
 
-                dataGridView1.DataSource = dataTable;
+               
 
 
                 if (dataTable.Rows.Count > 0)
                 {
-                    DataRow row = dataTable.Rows[0];  // Assume you want to display the first row
-                    HelperClass.SetTextBoxValuesFromRow(txtTeacherId, txtName, txtAddress, txtSalary, row);
+
+                   DataRow row = dataTable.Rows[0];  // Assume you want to display the first row
+                    HelperClass.SetTextBoxValuesFromRow(txtTeacherId, txtName, txtAddress, txtSalary,row);
                 }
 
             }
@@ -208,7 +215,5 @@ namespace DesktopCRUD
                 conn.Close();
             }
         }
-
-
     }
 }
